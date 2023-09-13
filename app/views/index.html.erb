@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="categories" class="body-height custom-light-gray-bg">
+  <% @categories.each do |category| %>
+    <%= render category %>
+  <% end %>
+  <%= link_to "Add category", new_category_path(user_id: current_user), class: "font-bold fixed bottom-0 w-full text-center py-2 bg-green m-0 text-green-900" %>
+</div>
+
