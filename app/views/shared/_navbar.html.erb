@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+  <nav class="flex justify-between items-center custom-blue-bg border-bottom p-1 px-2">
+    <div>
+      <img class="w-5 h-5" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Hamburger_icon_white.svg" alt="hamburger-menu">
+    </div>
+    <h2 class="text-white text-2xl font-black"><%=@title%></h2>
+    <%= link_to("Log out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }, class: "text-white") %>
+  </nav>
+  <div class="flex justify-between items-center custom-blue-bg px-2">
+    <p class="w-8 h-5"></p>
+    <p class="text-white">Most recent</p>
+    <p class="text-slate-300 text-sm">Most ancient</p>
+  </div>
+<%end%>
