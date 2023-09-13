@@ -74,6 +74,8 @@ end
 
 gem 'pg', '~> 1.5'
 
-gem "rspec-rails", "~> 6.0"
+gem 'rspec-rails', '~> 6.0'
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
+
+gem 'devise', '~> 4.9'
