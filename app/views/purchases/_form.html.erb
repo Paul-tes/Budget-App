@@ -1,0 +1,26 @@
+<%= form_with(url: category_purchases_path, model: purchase) do |form| %>
+  <% if purchase.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
+
+      <ul>
+        <% purchase.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field input-cont mt-12 rounded">
+    <%= form.text_field :name, placeholder: :Name, class: "input" %>
+    <%= form.text_field :amount, placeholder: :Price, class: "input" %>
+    <div class="flex justify-between items-start my-6">
+      <%= form.collection_select :category_id, current_user.categories, :id, :name, { include_blank: false }, {class: "bg-gray-200 text-gray-700 border border-gray-200 rounded text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-40 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-5"} %>
+    </div>
+    <div class="p-2 bg-blue text-center text-white rounded mt-20 w-20 mx-auto">
+      <%= form.submit "Save" %>
+    </div>
+  </div>
+
+
+<% end %>

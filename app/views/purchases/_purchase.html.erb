@@ -1,0 +1,11 @@
+<div id="<%= dom_id purchase %>" class="flex justify-between items-center bg-white p-1 m-2 border">
+  <div class="content">
+    <p class="font-bold">
+      <%= purchase.name %>
+    </p>
+    <p class="text-xs text-slate-500"><%=purchase.created_at.strftime("%e %b %y")%></p>
+  </div>
+
+  <p class="font-bold"><%= number_to_currency(purchase.amount)%></p>
+
+</div>
