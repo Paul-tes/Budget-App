@@ -70,6 +70,7 @@ Budget App is a mobile web application designed for efficient budget management.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://bugibugy.onrender.com/)
+- [Live Demo Video](https://www.loom.com/share/2f7f77c40be54ed0b57d4af3bd47278d?sid=e8df7ceb-cdc2-43e2-97d9-527e7df6930c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
