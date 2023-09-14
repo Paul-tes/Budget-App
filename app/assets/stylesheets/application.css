@@ -11,6 +11,12 @@
   background-color: #5fb523;
 }
 
+.border-btn {
+  border: 2px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
 .custom-black-color {
   color: #434b54;
 }
