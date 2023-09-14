@@ -34,7 +34,7 @@
 
 Budget App is a mobile web application designed for efficient budget management. Users can register, log in, add transactions to categories, and monitor their expenses. With secure authentication, PostgreSQL database, and comprehensive testing, this app ensures seamless and secure budget tracking.
 
-<img src="./app/assets/images/schema.png" alt="UML class diagram"/>
+<img src="./app/assets/images/erd_diagram.png" alt="UML class diagram"/>
 
 ## 🛠 Built With <a name="built-with"></a>
 
