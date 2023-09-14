@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <div id="purchases" class="body-height custom-light-gray-bg">
   <div class="flex justify-between bg-white mb-4 p-2 shadow-md">
     <%= link_to categories_path do %>
@@ -12,6 +10,5 @@
   <% @purchases.each do |purchase| %>
     <%= render purchase %>
   <% end %>
-  <%= link_to "New purchase", new_category_purchase_path, class: "font-bold fixed bottom-0 w-full text-center py-2 bg-green m-0 text-green-900" %>
+  <%= link_to "New purchase", new_category_purchase_path, class: "px-4 py-2 fixed bottom-0 text-center w-full font-semibold text-sm bg-cyan-600 text-white rounded-none shadow-sm hover:bg-cyan-700" %>
 </div>
-
